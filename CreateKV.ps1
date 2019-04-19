@@ -1,10 +1,10 @@
-$subscriptionName = 'Microsoft Azure Internal Consumption'
+$subscriptionName = '<your subscription name here>'
     $userPrincipalName = 'jamesh@microsoft.com'
-    $applicationId = 'c57455db-b3af-4ad6-abe1-271663c7b366'
-    $resourceGroupName = 'databricks'
+    $applicationId = '<your applicationid here>'
+    $resourceGroupName = '<your resource group name here>'
     # Use the same resource group name when creating your SQL Database below
     $location = 'East US 2'
-    $vaultName = 'AzureAEVault'
+    $vaultName = '<your keyvault>'
 
 
     Connect-AzAccount
