@@ -1,17 +1,17 @@
-Displayname: AzureAEUser
-Application ID: c57455db-b3af-4ad6-abe1-271663c7b366
+Displayname: <your user>
+Application ID: <your application id>
 Description: AzureEncryption
-Key:  +uGtYHieSU1ZCmOzXBfKEZMTtbNLQPs4Lkez7FGXPjw=
+Key:  <your hash key>
 
 
 
 // Instantiate a SqlConnectionStringBuilder.
     SqlConnectionStringBuilder connStringBuilder =
-       new SqlConnectionStringBuilder("Server=tcp:mydatabricks.database.windows.net,1433;Initial Catalog=myASQL;Persist Security Info=False;User ID={your_username};Password={your_password};MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;");
+       new SqlConnectionStringBuilder("Server=tcp:<Your Database Name>.database.windows.net,1433;Initial Catalog=myASQL;Persist Security Info=False;User ID={your_username};Password={your_password};MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;");
 
     // Enable Always Encrypted.
     connStringBuilder.ColumnEncryptionSetting =
        SqlConnectionColumnEncryptionSetting.Enabled;
 	   
 	   
-Server=tcp:mydatabricks.database.windows.net,1433;Initial Catalog=myASQL;Persist Security Info=False;User ID={your_username};Password={your_password};MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;Column Encryption Setting=Enabled;
+Server=tcp:<Your Database Name>.database.windows.net,1433;Initial Catalog=myASQL;Persist Security Info=False;User ID={your_username};Password={your_password};MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;Column Encryption Setting=Enabled;
